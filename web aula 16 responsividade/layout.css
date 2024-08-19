@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:blueviolet;
+}
+.teste p{
+    font-weight: bold;
+}
+
+.teste{
+    display:flex;
+}
+
+@media screen and (max-width:1000px){ /*@Media = estrategia de if que o css usa para responsividade.Screen referencia a tela, também existem os tipos de media type:print, handheld, all*/
+    body{
+        background-color:chocolate;
+    }
+}
+
+@media screen and (max-width: 800px){
+    body{
+        background-color:darkgreen;
+    }
+    .teste{
+        display:block;
+    }
+}
+
+@media screen and (max-width:500px){
+    body{
+        background-color: crimson;
+    }
+    .teste p{
+        /* visibility: hidden;  */
+        display:none;
+    }
+    
+}
